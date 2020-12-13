@@ -11,6 +11,13 @@ import os
 
 # runs arguments
 args = sys.argv
+# If there is less than 2 command line arguments output usage - ie let people know how to use the program
+if len(args)<2:
+    print("Usage: todo.py command parameters")
+    print("eg: todo.py add person task")
+    print("eg: todo.py list")
+    print("eg: todo.py remove task_index")
+    exit()
 
 command = args[1]
 
